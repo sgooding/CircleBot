@@ -91,12 +91,12 @@ void loop() {
     switch(incomingByte)
     {
       case 'L':
-      left_bump = GAIN;
-      right_bump = -GAIN;
+      left_bump = -GAIN;
+      right_bump = GAIN;
       break;
       case 'R':
-      right_bump = GAIN;
-      left_bump = -GAIN;
+      right_bump = -GAIN;
+      left_bump = GAIN;
       break;
       case 'U':
       SERVO_UP = true;
